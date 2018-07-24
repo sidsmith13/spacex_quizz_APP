@@ -1,0 +1,192 @@
+body * {
+	box-sizing: border-box;
+	font-family: Archivo;
+	/*border: 2px solid red;*/
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+  background: url('https://qz.com/wp-content/uploads/2018/04/tesla-spacex-elon-musk-starman-falcon-roadster-model-3-production.jpg?quality=80&strip=all&w') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+	height: 100%;
+}
+
+h1, h2 {
+	color: #0c2735;
+	background-color: rgba(231, 162, 12, 0.61);
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+  padding: 10px;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin-top: .5em;
+  padding: 10px;
+  margin: 150px;
+}
+
+#start-page {
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+button {
+	display: block;
+	min-height: 80px;
+	min-width: 80px;
+	margin-bottom: 3em;
+	font-size: 2em;
+	border: none;
+	background-color: rgba(231, 162, 12, 0.61);
+	color: black;
+	border-radius: 5px;
+	padding: .5em 1em;
+	width: 60%;
+	max-width: 200px;
+}
+
+button:hover {
+	background-color: rgba(231, 162, 12, 0.979);
+	cursor: pointer;
+}
+
+#question-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+#question {
+	margin: 0;
+  padding: 10px;
+	background-color: rgba(231, 162, 12, 0.61);
+}
+
+form {
+  background-color: rgba(151, 188, 229, 0.61);
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+	padding: 0 10%;
+	min-height: 100px;
+	border: none;
+}
+label {
+	margin-bottom: 1em;
+	font-size: 1.5em;
+}
+
+.answer {
+	width: 1.5em;
+	height: 1.1em;
+	vertical-align: middle;
+}
+
+#js-submit-button {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+#status-bar {
+  background-color: rgba(231, 162, 12, 0.61);
+}
+
+#question-count, #score-count {
+	display: inline-block;
+	font-size: 1.6em;
+}
+
+#score-count {
+	float: right;
+}
+
+.feedback-page {
+	display: flex;
+	flex-direction: column;
+}
+.feedback-page img {
+  height: 400px;
+  width: 300px;
+}
+#js-next-button {
+	margin: 1em auto;
+}
+
+#js-restart-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 10em;
+}
+
+@media only screen and (min-width: 360px) {
+	#question-count, #score-count {
+		display: inline-block;
+		font-size: 1.8em;
+		margin: 0 .6em .6em;
+	}
+
+	#score-count {
+		float: right;
+	}	
+
+	label {
+		margin-bottom: 2em;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	.feedback-page img {
+		display: block;
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.feedback-page h2 {
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+	form {
+		padding: 4em 7em 0;
+	}
+
+	#question-count {
+		padding-left: 8em;
+		padding-bottom: 2.5em;
+	}
+
+	#score-count {
+		padding-right: 8em;
+		padding-bottom: 2.5em;
+	}
+}
